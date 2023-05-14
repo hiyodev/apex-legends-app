@@ -5,14 +5,7 @@ function CardList(props) {
   const { weaponStats } = props;
 
   const weaponList = weaponStats.map((weapon) => {
-    return (
-      <Card
-        key={weapon.id}
-        title={weapon.title}
-        img={weapon.img}
-        description={weapon.description}
-      ></Card>
-    );
+    return <Card key={weapon.id} weapon={weapon}></Card>;
   });
 
   return <>{weaponList}</>;
