@@ -1,17 +1,12 @@
 # Apex Legends App ( 1 / 50 Apps )
 - Why did I make this?
 1. To learn and or practice the followings
-  - Replicating components from websites
-  - Creating reuseable components
-  - CSS styling and animation
+    1. Replicating components from websites
+    2. Creating reuseable components
+    3. CSS styling and animation
 2. To become a better Frontend Developer.
 3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
-* Item 1
-* Item 2
-* Item 3
-  * Sub Item A
-  * Sub Item B
 
 # App Summary
 ## Weapon Card
@@ -19,10 +14,12 @@
 2. This app references data and card style from https://apexlegends.fandom.com/
 3. The cards in my apps are the same as the cards in that website
 
+
 ## Code Info
 1. Weapon data and assets are stored locally.
 2. styled-components for css styling.
 3. Javascript for code. 
+
 
 # Images
 - In Progress
