@@ -1,9 +1,9 @@
 # Apex Legends App ( 1 / 50 Apps )
 - Why did I make this?
 1. To learn and or practice the followings
-- Replicating components from websites
-- Creating reuseable components
-- CSS styling and animation
+  - Replicating components from websites
+  - Creating reuseable components
+  - CSS styling and animation
 2. To become a better Frontend Developer.
 3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
