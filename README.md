@@ -1,8 +1,8 @@
-# Apex Legends App ( 1 / 100 Apps )
+# Apex Legends App ( 1 / 50 Apps )
 - 3 Main purpose of this Project
 1. To practice and fully understand the "reusability" meaning behind Components in React Framework.
-2. I believe that a good FE developer is capable of replicating any component on any website hence why I'm doing this. 
-3. My goal for this year is to make 100 web-apps by end of this year and hopefully acquire important FE knowledge along the way. 
+2. I believe that a good FrontEnd developer is capable of replicating any component on any website hence I'm doing this to get better at replicating components and ensuring reuseability.
+3. My goal for this year is to make 50 web-apps by end of this year and hopefully acquire important FE knowledge along the way. This project was created in May 2023 and is the 1/50 project.
 
 # Details
 ## Weapon Card
