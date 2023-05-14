@@ -103,6 +103,8 @@ function Card({ weapon }) {
         rowData={manufacturer}
         category={category}
       ></CardRow>
+      <SubHeaderStyle>— Attachment Slots —</SubHeaderStyle>
+      <CardRow></CardRow>
     </CardStyle>
   );
 }

@@ -17,14 +17,12 @@ const RowHeaderStyle = styled.div`
     return CategoryColorTheme(props.category).rowHeaderColor;
   }};
   color: white;
-  border: 1px solid white;
   border-radius: 0.25rem;
   padding-right: 0.25rem;
 `;
 
 const RowContentStyle = styled.div`
   flex: 1;
-  padding-top: 2px;
   text-align: left;
   font-size: 1rem;
   padding-left: 0.25rem;
