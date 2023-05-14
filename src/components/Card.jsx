@@ -9,10 +9,9 @@ const cardFocusAnimation = keyframes`
 
 const CardStyle = styled.div`
   margin: 1rem;
-  padding: 1rem;
-  border: 2px solid white;
+  padding: 0.5rem;
+  border: 1px solid white;
   width: 25rem;
-  border-radius: 1rem;
   background: #121418;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
@@ -26,18 +25,40 @@ const CardStyle = styled.div`
 `;
 
 const ImageStyle = styled.img`
+  padding-top: 0.5rem;
   width: 100%;
-  height: 10rem;
   object-fit: contain;
 `;
 
+const TitleStyle = styled.div`
+  font-size: 2rem;
+  padding: 0.1rem;
+  font-weight: bold;
+  background-color: #353535;
+`;
+
+const DescriptionStyle = styled.div`
+  font-size: 1rem;
+  font-style: italic;
+`;
+
+// Default Card layout
+/*
+---------
+| TITLE |
+|  IMG  |
+|  ...  |
+|  ...  |
+---------
+*/
+
 function Card(props) {
-  const { title, body, img } = props;
+  const { title, img, description } = props;
   return (
     <CardStyle>
+      <TitleStyle>{title}</TitleStyle>
       <ImageStyle src={img} alt="logo" />
-      <h3>{title}</h3>
-      <p>{body}</p>
+      <DescriptionStyle>{description}</DescriptionStyle>
     </CardStyle>
   );
 }
