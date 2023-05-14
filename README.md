@@ -7,6 +7,12 @@
 2. To become a better Frontend Developer.
 3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
+* Item 1
+* Item 2
+* Item 3
+  * Sub Item A
+  * Sub Item B
+
 # App Summary
 ## Weapon Card
 1. Simple app that shows all the weapons in Apex Legends
