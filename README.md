@@ -1,9 +1,11 @@
 # Apex Legends App ( 1 / 50 Apps )
 - Why did I make this?
-1. Practice React Component reusability.
-2. Improve Card CSS Styling skills. 
-3. Learn to replicate any component on any website.
-4. Work towards my 50 apps in 2023 goal, 1/50 done.
+1. To learn and or practice the followings
+- Replicating components from websites
+- Creating reuseable components
+- CSS styling and animation
+2. To become a better Frontend Developer.
+3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
 # App Summary
 ## Weapon Card
