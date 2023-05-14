@@ -3,7 +3,7 @@
 1. Practice React Component reusability.
 2. Improve Card CSS Styling skills. 
 3. Learn to replicate any component on any website.
-4. Complete my bucket list of creating 50 apps in 2023 during my free-time.
+4. Work towards my 50 apps in 2023 goal, 1/50 done.
 
 # App Summary
 ## Weapon Card
