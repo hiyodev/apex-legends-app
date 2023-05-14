@@ -1,8 +1,9 @@
 # Apex Legends App ( 1 / 50 Apps )
 - Why did I make this?
-1. To practice and fully understand the "reusability" meaning behind Components in React Framework.
-2. I believe that a good Frontend Developer is capable of replicating any component on any website hence I'm doing this to get better at replicating components and ensuring reuseability.
-3. My goal for this year is to make 50 web-apps by end of this year and hopefully acquire important FE knowledge along the way. This project was created in May 2023 and is the 1/50 project.
+1. Practice React Component reusability.
+2. Improve Card CSS Styling skills. 
+3. Learn to replicate any component on any website.
+4. Complete my bucket list of creating 50 apps in 2023 during my free-time.
 
 # App Summary
 ## Weapon Card
