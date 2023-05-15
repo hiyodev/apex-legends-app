@@ -107,8 +107,12 @@ function Card({ weapon }) {
           category={category}
         ></CardRow>
       )}
-      <SubHeaderStyle>— Attachment Slots —</SubHeaderStyle>
-      <CardRow rowImgs={attachments}></CardRow>
+      {attachments && (
+        <>
+          <SubHeaderStyle>— Attachment Slots —</SubHeaderStyle>
+          <CardRow rowImgs={attachments}></CardRow>
+        </>
+      )}
       <SubHeaderStyle>— Damage —</SubHeaderStyle>
       <CardRow category={category} rowAttachments={damages}></CardRow>
     </CardStyle>
