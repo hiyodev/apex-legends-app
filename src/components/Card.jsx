@@ -78,6 +78,8 @@ function Card({ weapon }) {
     category,
     fire_mode,
     manufacturer,
+    attachments,
+    damages,
   } = weapon;
   return (
     <CardStyle category={category}>
@@ -104,7 +106,9 @@ function Card({ weapon }) {
         category={category}
       ></CardRow>
       <SubHeaderStyle>— Attachment Slots —</SubHeaderStyle>
-      <CardRow></CardRow>
+      <CardRow rowImgs={attachments}></CardRow>
+      <SubHeaderStyle>— Damage —</SubHeaderStyle>
+      <CardRow category={category} rowDatas={damages}></CardRow>
     </CardStyle>
   );
 }

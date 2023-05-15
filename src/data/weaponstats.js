@@ -35,6 +35,13 @@ import energy_ammo_icon from "../images/ammo/energy_ammo_icon.svg";
 import sniper_ammo_icon from "../images/ammo/sniper_ammo_icon.svg";
 import shotgun_ammo_icon from "../images/ammo/shotgun_ammo_icon.svg";
 
+// Attachments
+import laser_sight_icon from "../images/attachments/laser_sight.svg";
+import barrel_mod_icon from "../images/attachments/barrel_mod.svg";
+import light_mag_icon from "../images/attachments/light_mag.svg";
+import optics_icon from "../images/attachments/optics.svg";
+import standard_stock_icon from "../images/attachments/standard_stock.svg";
+
 export const weaponStats = [
   {
     id: 1,
@@ -48,6 +55,38 @@ export const weaponStats = [
     ammo: "Light Rounds",
     fire_mode: "Auto",
     manufacturer: "Lastimosa Armory",
+    attachments: [
+      {
+        key: "laser",
+        img: laser_sight_icon,
+      },
+      {
+        key: "magazine",
+        img: light_mag_icon,
+      },
+      {
+        key: "optics",
+        img: optics_icon,
+      },
+      {
+        key: "stock",
+        img: standard_stock_icon,
+      },
+    ],
+    damages: [
+      {
+        key: "body",
+        value: "12",
+      },
+      {
+        key: "head",
+        value: "18 (1.5x)",
+      },
+      {
+        key: "legs",
+        value: "10 (0.8x)",
+      },
+    ],
   },
   {
     id: 2,

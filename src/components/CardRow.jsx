@@ -42,7 +42,36 @@ const IconStyle = styled.img`
   max-height: 1.75rem;
 `;
 
-function CardRow({ rowTitle, rowData, rowImg, category }) {
+const AttachmentIconStyle = styled.img`
+  border: 2px solid black;
+  background-color: #ba997b;
+  border-radius: 5px;
+  max-height: 2.5rem;
+  margin: 1px;
+`;
+
+const DamageHeaderStyle = styled(RowHeaderStyle)`
+  margin: 1px;
+  padding: 2px;
+  text-transform: uppercase;
+  text-align: center;
+`;
+
+const DamageContentStyle = styled(DamageHeaderStyle)`
+  color: black;
+  text-transform: lowercase;
+  font-weight: normal;
+`;
+
+function CardRow({ rowTitle, rowData, rowDatas, rowImg, rowImgs, category }) {
+  let attachmentImgs = [];
+
+  if (rowImgs !== undefined && rowImgs.length != 0) {
+    attachmentImgs = rowImgs.map(({ key, img }) => {
+      return <AttachmentIconStyle key={key} src={img}></AttachmentIconStyle>;
+    });
+  }
+
   return (
     <>
       <RowWrapper>
@@ -60,6 +89,25 @@ function CardRow({ rowTitle, rowData, rowImg, category }) {
         )}
         {!rowImg && rowData && <RowContentStyle>{rowData}</RowContentStyle>}
       </RowWrapper>
+      {rowImgs && attachmentImgs}
+      {rowDatas && (
+        <>
+          <RowWrapper>
+            {rowDatas.map(({ key, value }) => {
+              return (
+                <DamageHeaderStyle category={category} key={key}>
+                  {key}
+                </DamageHeaderStyle>
+              );
+            })}
+          </RowWrapper>
+          <RowWrapper>
+            {rowDatas.map(({ key, value }) => {
+              return <DamageContentStyle key={key}>{value}</DamageContentStyle>;
+            })}
+          </RowWrapper>
+        </>
+      )}
     </>
   );
 }

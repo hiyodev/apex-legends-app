@@ -1,5 +1,4 @@
 export function CategoryColorTheme(category) {
-  console.log(category);
   switch (category) {
     case "light":
       return {
@@ -33,9 +32,9 @@ export function CategoryColorTheme(category) {
       };
     default:
       return {
-        cardColor: "white",
-        cardTitleColor: "white",
-        rowHeaderColor: "white",
+        cardColor: "transparent",
+        cardTitleColor: "transparent",
+        rowHeaderColor: "transparent",
       };
   }
 }
