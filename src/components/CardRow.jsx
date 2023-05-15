@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
 import { CategoryColorTheme } from "../utils/styleHelper.js";
@@ -19,6 +19,7 @@ const RowHeaderStyle = styled.div`
   color: white;
   border-radius: 0.25rem;
   padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
 `;
 
 const RowContentStyle = styled.div`
@@ -33,20 +34,26 @@ const RowContentWithImageStyle = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  text-align: left;
   font-size: 1rem;
   padding-left: 0.25rem;
 `;
 
-const IconStyle = styled.img`
+const ColumnContentWithImageStyle = styled(RowContentWithImageStyle)`
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+`;
+
+const GunIconStyle = styled.img`
   max-height: 1.75rem;
 `;
 
+const SmallIconStyle = styled.img`
+  max-width: 1.75rem;
+`;
+
 const AttachmentIconStyle = styled.img`
-  border: 2px solid black;
-  background-color: #ba997b;
-  border-radius: 5px;
-  max-height: 2.5rem;
+  max-height: 3rem;
   margin: 1px;
 `;
 
@@ -63,37 +70,66 @@ const DamageContentStyle = styled(DamageHeaderStyle)`
   font-weight: normal;
 `;
 
-function CardRow({ rowTitle, rowData, rowDatas, rowImg, rowImgs, category }) {
+function CardRow({
+  rowTitle,
+  rowData,
+  rowDataExtended,
+  rowAttachments,
+  rowImg,
+  rowImgs,
+  category,
+}) {
   let attachmentImgs = [];
+  let extendedRows = [];
 
-  if (rowImgs !== undefined && rowImgs.length != 0) {
+  if (rowImgs !== undefined && rowImgs.length !== 0) {
     attachmentImgs = rowImgs.map(({ key, img }) => {
       return <AttachmentIconStyle key={key} src={img}></AttachmentIconStyle>;
+    });
+  }
+
+  if (rowDataExtended !== undefined && rowDataExtended.length !== 0) {
+    extendedRows = rowDataExtended.map(({ img, value }) => {
+      return (
+        <RowContentWithImageStyle key={value}>
+          {img && <SmallIconStyle src={img} alt="icon" />}
+          <ColumnContentWithImageStyle>
+            <>{value}</>
+          </ColumnContentWithImageStyle>
+        </RowContentWithImageStyle>
+      );
     });
   }
 
   return (
     <>
       <RowWrapper>
-        <RowHeaderStyle category={category}>{rowTitle}</RowHeaderStyle>
+        {rowTitle && (
+          <RowHeaderStyle category={category}>{rowTitle}</RowHeaderStyle>
+        )}
         {rowImg && rowData && (
           <RowContentWithImageStyle>
-            <IconStyle src={rowImg} alt="icon" />
+            <SmallIconStyle src={rowImg} alt="icon" />
             {rowData}
           </RowContentWithImageStyle>
         )}
         {rowImg && !rowData && (
-          <RowContentStyle>
-            <IconStyle src={rowImg} alt="icon" />
-          </RowContentStyle>
+          <RowContentWithImageStyle>
+            <GunIconStyle src={rowImg} alt="icon" />
+          </RowContentWithImageStyle>
         )}
         {!rowImg && rowData && <RowContentStyle>{rowData}</RowContentStyle>}
+        {rowDataExtended && (
+          <ColumnContentWithImageStyle>
+            {extendedRows}
+          </ColumnContentWithImageStyle>
+        )}
       </RowWrapper>
       {rowImgs && attachmentImgs}
-      {rowDatas && (
+      {rowAttachments && (
         <>
           <RowWrapper>
-            {rowDatas.map(({ key, value }) => {
+            {rowAttachments.map(({ key }) => {
               return (
                 <DamageHeaderStyle category={category} key={key}>
                   {key}
@@ -102,7 +138,7 @@ function CardRow({ rowTitle, rowData, rowDatas, rowImg, rowImgs, category }) {
             })}
           </RowWrapper>
           <RowWrapper>
-            {rowDatas.map(({ key, value }) => {
+            {rowAttachments.map(({ key, value }) => {
               return <DamageContentStyle key={key}>{value}</DamageContentStyle>;
             })}
           </RowWrapper>

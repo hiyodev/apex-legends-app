@@ -30,6 +30,12 @@ export function CategoryColorTheme(category) {
         cardTitleColor: "#7e82ff",
         rowHeaderColor: "#3e36a5",
       };
+    case "mythic":
+      return {
+        cardColor: "#f9b2c8",
+        cardTitleColor: "#ee0047",
+        rowHeaderColor: "#8b001a",
+      };
     default:
       return {
         cardColor: "transparent",

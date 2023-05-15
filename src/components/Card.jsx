@@ -97,18 +97,20 @@ function Card({ weapon }) {
       ></CardRow>
       <CardRow
         rowTitle="Fire modes"
-        rowData={fire_mode}
+        rowDataExtended={fire_mode}
         category={category}
       ></CardRow>
-      <CardRow
-        rowTitle="Manufacturer"
-        rowData={manufacturer}
-        category={category}
-      ></CardRow>
+      {manufacturer && (
+        <CardRow
+          rowTitle="Manufacturer"
+          rowDataExtended={manufacturer}
+          category={category}
+        ></CardRow>
+      )}
       <SubHeaderStyle>— Attachment Slots —</SubHeaderStyle>
       <CardRow rowImgs={attachments}></CardRow>
       <SubHeaderStyle>— Damage —</SubHeaderStyle>
-      <CardRow category={category} rowDatas={damages}></CardRow>
+      <CardRow category={category} rowAttachments={damages}></CardRow>
     </CardStyle>
   );
 }
