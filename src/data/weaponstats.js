@@ -137,56 +137,90 @@ import paradinha_arsenal_icon from "../images/manufacturer/paradinha_arsenal_ico
 export const weaponStats = [
   {
     id: 1,
-    title: "R-99 SMG",
     category: "light",
+    title: "R-99 SMG",
     img: r99,
     description: "Rapid-fire automatic SMG.",
-    icon: r99_icon,
-    type: "Sub machine gun",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "laser",
-        img: laser_sight_icon,
-      },
-      {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "12",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "18 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "10 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
       },
     ],
     technical: [
@@ -218,48 +252,104 @@ export const weaponStats = [
     category: "heavy",
     img: car,
     description: "Adaptable SMG. Uses light and heavy ammo.",
-    icon: car_icon,
-    type: "Sub machine gun",
-    ammo_icon: heavylight_ammo_icon,
-    ammo: "Heavy/Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: car_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Siwhan Industries",
-        img: siwhan_industries_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Heavy/Light Rounds",
+        img: heavylight_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Siwhan Industries",
+            img: siwhan_industries_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: car_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "magazine",
+            img: car_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "13",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "13",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "20 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "20 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "10 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "930",
+      },
+      {
+        title: "DPS",
+        text: "202",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.7",
+      },
+      {
+        title: "Full reload time",
+        text: "2.13",
       },
     ],
   },
@@ -269,46 +359,99 @@ export const weaponStats = [
     category: "energy",
     img: volt,
     description: "Energy actuated SMG.",
-    icon: volt_icon,
-    type: "Sub machine gun",
-    ammo_icon: energy_ammo_icon,
-    ammo: "Energy Ammo",
-    fire_mode: [
+    profile: [
       {
+        title: "Icon",
+        img: volt_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Energy Ammo",
+        img: energy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
         img: auto_icon,
-        value: "Auto",
       },
     ],
     attachments: [
       {
-        key: "laser",
-        img: laser_sight_icon,
-      },
-      {
-        key: "magazine",
-        img: energy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: energy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "15",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "15",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "23 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "23 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "12 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "12 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "720",
+      },
+      {
+        title: "DPS",
+        text: "180",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.44",
+      },
+      {
+        title: "Full reload time",
+        text: "2.03",
       },
     ],
   },
@@ -318,52 +461,108 @@ export const weaponStats = [
     category: "light",
     img: alternator,
     description: "Twin barrel full-auto SMG.",
-    icon: alternator_icon,
-    type: "Sub machine gun",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: alternator_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Burrell Defense",
-        img: burrell_defense_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Burrell Defense",
+            img: burrell_defense_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "laser",
-        img: laser_sight_icon,
-      },
-      {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "16",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "16",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "14 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "24 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "13 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "13 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "600",
+      },
+      {
+        title: "DPS",
+        text: "160",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.9",
+      },
+      {
+        title: "Full reload time",
+        text: "2.23",
       },
     ],
   },
@@ -373,52 +572,108 @@ export const weaponStats = [
     category: "heavy",
     img: prowler,
     description: "5-round burst SMG.",
-    icon: prowler_icon,
-    type: "Sub machine gun",
-    ammo_icon: heavy_ammo_icon,
-    ammo: "Heavy Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: burst_icon,
-        value: "Burst (5)",
+        title: "Icon",
+        img: prowler_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Heavy Rounds",
+        img: heavy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Burst (5)",
+        img: burst_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "laser",
-        img: laser_sight_icon,
-      },
-      {
-        key: "magazine",
-        img: heavy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: heavy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "15",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "15",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "22 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "22 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "12 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "12 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "697",
+      },
+      {
+        title: "DPS",
+        text: "174",
+      },
+      {
+        title: "Magazine",
+        text: "20",
+      },
+      {
+        title: "Tac reload time",
+        text: "2",
+      },
+      {
+        title: "Full reload time",
+        text: "2.6",
       },
     ],
   },
@@ -428,56 +683,117 @@ export const weaponStats = [
     category: "energy",
     img: havoc,
     description: "Full-auto charged energy rifle.",
-    icon: havoc_icon,
-    type: "Assault rifle",
-    ammo_icon: energy_ammo_icon,
-    ammo: "Energy Ammo",
-    fire_mode: [
+    profile: [
       {
+        title: "Icon",
+        img: havoc_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Assault rifle",
+      },
+      {
+        title: "Ammo",
+        text: "Energy Ammo",
+        img: energy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
         img: auto_icon,
-        value: "Auto",
-      },
-    ],
-    manufacturer: [
-      {
-        value: "Siwhan Industries",
-        img: siwhan_industries_icon,
       },
       {
-        value: "Wonyeon",
-        img: wonyeon_icon,
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Siwhan Industries",
+            img: siwhan_industries_icon,
+          },
+          {
+            text: "Wonyeon",
+            img: wonyeon_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: energy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
-      },
-      {
-        key: "turbocharger",
-        img: turbocharger_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "magazine",
+            img: energy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+          {
+            alt: "turbocharger",
+            img: turbocharger_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "18",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "18",
+          },
+          {
+            text: "17",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "32 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "32 (1.75x)",
+          },
+          {
+            text: "30 (1.75x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "15 (0.85x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "15 (0.85x)",
+          },
+          {
+            text: "14 (0.85x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "672",
+      },
+      {
+        title: "DPS",
+        text: "202",
+      },
+      {
+        title: "Magazine",
+        text: "24",
+      },
+      {
+        title: "Reload time",
+        text: "3.2",
       },
     ],
   },
@@ -487,52 +803,112 @@ export const weaponStats = [
     category: "heavy",
     img: flatline,
     description: "Full-auto with a punch.",
-    icon: flatline_icon,
-    type: "Assault rifle",
-    ammo_icon: heavy_ammo_icon,
-    ammo: "Heavy Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: flatline_icon,
+        img_type: "gun",
       },
       {
-        img: single_icon,
-        value: "Single",
+        title: "Type",
+        text: "Assault rifle",
       },
-    ],
-    manufacturer: [
       {
-        value: "Wonyeon",
-        img: wonyeon_icon,
+        title: "Ammo",
+        text: "Heavy Rounds",
+        img: heavy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Wonyeon",
+            img: wonyeon_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: heavy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "magazine",
+            img: heavy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "18",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "18",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "32 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "32 (1.75x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "14 (0.75x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "14 (0.75x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "600",
+      },
+      {
+        title: "DPS",
+        text: "180",
+      },
+      {
+        title: "Magazine",
+        text: "20",
+      },
+      {
+        title: "Tac reload time",
+        text: "2.4",
+      },
+      {
+        title: "Full reload time",
+        text: "3.1",
       },
     ],
   },
@@ -542,48 +918,108 @@ export const weaponStats = [
     category: "mythic",
     img: hemlock,
     description: "3-round burst SMG.",
-    icon: hemlock_icon,
-    type: "Assault rifle",
-    ammo_icon: mythic_heavy_ammo_icon,
-    ammo: "Mythic Heavy Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: burst_icon,
-        value: "Burst (3)",
+        title: "Icon",
+        img: hemlock_icon,
+        img_type: "gun",
       },
       {
-        img: single_icon,
-        value: "Single",
+        title: "Type",
+        text: "Assault rifle",
       },
-    ],
-    manufacturer: [
       {
-        value: "Wonyeon",
-        img: wonyeon_icon,
+        title: "Ammo",
+        text: "Mythic Heavy Rounds",
+        img: mythic_heavy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Burst (3)",
+            img: burst_icon,
+          },
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Wonyeon",
+            img: wonyeon_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "boosted loader",
-        img: boosted_loader_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "boosted loader",
+            img: boosted_loader_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "23",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "23",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "40 (1.8x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "40 (1.8x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "17 (0.75x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "17 (0.75x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "414",
+      },
+      {
+        title: "DPS",
+        text: "159",
+      },
+      {
+        title: "Magazine",
+        text: "30",
+      },
+      {
+        title: "Tac reload time",
+        text: "2.16",
+      },
+      {
+        title: "Full reload time",
+        text: "2.57",
       },
     ],
   },
@@ -593,52 +1029,116 @@ export const weaponStats = [
     category: "light",
     img: r301,
     description: "Full-auto and high accuracy.",
-    icon: r301_icon,
-    type: "Sub machine gun",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: r301_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        title: "Type",
+        text: "Assault rifle",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "barrel",
-        img: barrel_mod_icon,
-      },
-      {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "barrel",
+            img: barrel_mod_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "13",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "13",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "23 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "23 (1.75x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "10 (0.75x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.75x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "810",
+      },
+      {
+        title: "DPS",
+        text: "176",
+      },
+      {
+        title: "Magazine",
+        text: "18",
+      },
+      {
+        title: "Tac reload time",
+        text: "2.4",
+      },
+      {
+        title: "Full reload time",
+        text: "3.2",
       },
     ],
   },
@@ -648,56 +1148,112 @@ export const weaponStats = [
     category: "energy",
     img: nemesis,
     description: "Auto-trigger 4-round burst energy rifle.",
-    icon: nemesis_icon,
-    type: "Assault rifle",
-    ammo_icon: energy_ammo_icon,
-    ammo: "Energy Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: burst_icon,
-        value: "Burst (4)",
-      },
-    ],
-    manufacturer: [
-      {
-        value: "Rampart (designer)",
-        img: rampart_icon,
+        title: "Icon",
+        img: nemesis_icon,
+        img_type: "gun",
       },
       {
-        value: "The Sisters (manufacturer)",
-        img: the_sisters_icon,
+        title: "Type",
+        text: "Assault rifle",
+      },
+      {
+        title: "Ammo",
+        text: "Energy Ammo",
+        img: energy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Burst (4)",
+            img: burst_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Rampart (designer)",
+            img: rampart_icon,
+          },
+          {
+            text: "The Sisters (manufacturer)",
+            img: the_sisters_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "barrel_mod",
-        img: barrel_mod_icon,
-      },
-      {
-        key: "magazine",
-        img: energy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "barrel",
+            img: barrel_mod_icon,
+          },
+          {
+            alt: "magazine",
+            img: energy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "17",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "17",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "30 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "30 (1.75x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "13 (0.75x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "13 (0.75x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "637~692",
+      },
+      {
+        title: "DPS",
+        text: "180-196",
+      },
+      {
+        title: "Magazine",
+        text: "20",
+      },
+      {
+        title: "Reload time",
+        text: "2.7",
       },
     ],
   },
@@ -707,50 +1263,116 @@ export const weaponStats = [
     category: "energy",
     img: devotion,
     description: "Full-auto energy LMG.",
-    icon: devotion_icon,
-    type: "Light machine gun",
-    ammo_icon: energy_ammo_icon,
-    ammo: "Energy Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: devotion_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Light machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Energy Ammo",
+        img: energy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "barrel_mod",
-        img: barrel_mod_icon,
-      },
-      {
-        key: "magazine",
-        img: energy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
-      },
-      {
-        key: "turbocharger",
-        img: turbocharger_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "barrel",
+            img: barrel_mod_icon,
+          },
+          {
+            alt: "magazine",
+            img: energy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+          {
+            alt: "turbocharger",
+            img: turbocharger_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "15",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "15",
+          },
+          {
+            text: "14",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "23 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "23 (1.5x)",
+          },
+          {
+            text: "21 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "13 (0.85x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "13 (0.85x)",
+          },
+          {
+            text: "12 (0.85x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "300-900",
+      },
+      {
+        title: "DPS",
+        text: "75-225",
+      },
+      {
+        title: "Magazine",
+        text: "36",
+      },
+      {
+        title: "Tac reload time",
+        text: "2.8",
+      },
+      {
+        title: "Full reload time",
+        text: "3.63",
       },
     ],
   },
@@ -760,44 +1382,109 @@ export const weaponStats = [
     category: "mythic",
     img: l_star,
     description: "Plasma-fueled heavy MG.",
-    icon: l_star_icon,
-    type: "Light machine gun",
-    ammo_icon: mythic_energy_ammo_icon,
-    ammo: "Mythic Energy Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: l_star_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Wonyeon",
-        img: wonyeon_icon,
+        title: "Type",
+        text: "Light machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Mythic Energy Ammo",
+        img: mythic_energy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Wonyeon",
+            img: wonyeon_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "disruptor rounds",
-        img: disruptor_rounds_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "disruptor rounds",
+            img: disruptor_rounds_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "16",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "16",
+          },
+          {
+            text: "25",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "24 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "24 (1.5x)",
+          },
+          {
+            text: "38 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "14 (0.85x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "14 (0.85x)",
+          },
+          {
+            text: "21 (0.85x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "600",
+      },
+      {
+        title: "DPS",
+        text: "160",
+      },
+      {
+        title: "Magazine",
+        text: "∞",
+      },
+      {
+        title: "Reload time",
+        text: "2.21",
       },
     ],
   },
@@ -807,48 +1494,108 @@ export const weaponStats = [
     category: "light",
     img: spitfire,
     description: "Full-auto LMG.",
-    icon: spitfire_icon,
-    type: "Light machine gun",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: spitfire_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Siwhan Industries",
-        img: siwhan_industries_icon,
+        title: "Type",
+        text: "Light machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Siwhan Industries",
+            img: siwhan_industries_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "18",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "18",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "27 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "27 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "15 (0.85x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "15 (0.85x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "540",
+      },
+      {
+        title: "DPS",
+        text: "162",
+      },
+      {
+        title: "Magazine",
+        text: "35",
+      },
+      {
+        title: "Tac reload time",
+        text: "3.4",
+      },
+      {
+        title: "Full reload time",
+        text: "4.2",
       },
     ],
   },
@@ -858,55 +1605,115 @@ export const weaponStats = [
     category: "heavy",
     img: rampage,
     description: "Fire Powered LMG. Charge with Thermites.",
-    icon: rampage_icon,
-    type: "Light machine gun",
-    ammo_icon: heavy_ammo_icon,
-    ammo: "Heavy Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
-      },
-    ],
-    manufacturer: [
-      {
-        value: "Rampart (designer)",
-        img: rampart_icon,
+        title: "Icon",
+        img: rampage,
+        img_type: "gun",
       },
       {
-        value: "SWCC (manufacturer)",
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Heavy Rounds",
+        img: heavy_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+        ],
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Rampart (designer)",
+            img: rampart_icon,
+          },
+          {
+            text: "SWCC (manufacturer)",
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "barrel_mod",
-        img: barrel_mod_icon,
-      },
-      {
-        key: "magazine",
-        img: heavy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "barrel",
+            img: barrel_mod_icon,
+          },
+          {
+            alt: "magazine",
+            img: heavy_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "26",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "26",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "39 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "39 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "22 (0.85x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "22 (0.85x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "300",
+      },
+      {
+        title: "DPS",
+        text: "130",
+      },
+      {
+        title: "Magazine",
+        text: "28",
+      },
+      {
+        title: "Tac reload time",
+        text: "3.1",
+      },
+      {
+        title: "Full reload time",
+        text: "4",
       },
     ],
   },
@@ -916,51 +1723,108 @@ export const weaponStats = [
     category: "heavy",
     img: _3030repeater,
     description: "Semi-auto heavy repeater.",
-    icon: _3030_repeater_icon,
-    type: "Marksman weapon",
-    ammo_icon: heavy_ammo_icon,
-    ammo: "Heavy Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Holdener Arms",
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: heavy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: sniper_stock_icon,
-      },
-      {
-        key: "skullpiercer",
-        img: skull_piercer_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "42~57",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "74~100 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "36~48 (0.85x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -970,38 +1834,108 @@ export const weaponStats = [
     category: "mythic",
     img: bocek,
     description: "Hold fire to increase power.",
-    icon: bocek_icon,
-    type: "Marksman weapon",
-    ammo_icon: mythic_arrow_ammo_icon,
-    ammo: "Mythic Arrows",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "shatter caps",
-        img: shatter_caps_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "25-70",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "31-122 (1.25x)-(1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "20-63 (0.8x)-(0.9x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1011,60 +1945,108 @@ export const weaponStats = [
     category: "light",
     img: g7_scout,
     description: "Semi-auto light marksman rifle.",
-    icon: g7_scout_icon,
-    type: "Marksman weapon",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
       {
-        img: double_tap_trigger_noborder_icon,
-        value: "Burst (2)",
+        title: "Type",
+        text: "Sub machine gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "barrel",
-        img: barrel_mod_icon,
-      },
-      {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: sniper_stock_icon,
-      },
-      {
-        key: "double tap trigger",
-        img: double_tap_trigger_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "32",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "56 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "24 (0.75x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1074,48 +2056,108 @@ export const weaponStats = [
     category: "energy",
     img: triple_take,
     description: "Triple-barrel marksman rifle.",
-    icon: triple_take_icon,
-    type: "Marksman weapon",
-    ammo_icon: energy_ammo_icon,
-    ammo: "Energy Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Burrell Defense",
-        img: burrell_defense_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: energy_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: sniper_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "21x3",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "37x3 (1.75x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "19x3 (0.9x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1125,44 +2167,108 @@ export const weaponStats = [
     category: "sniper",
     img: charge_rifle,
     description: "Charged beam sniper rifle.",
-    icon: charge_rifle_icon,
-    type: "Sniper",
-    ammo_icon: sniper_ammo_icon,
-    ammo: "Sniper Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Viunson Dynamics",
-        img: vinson_dynamics_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: sniper_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "3x15 + 45",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "4x15 + 56 (1.25x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "3x15 + 45",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1172,34 +2278,108 @@ export const weaponStats = [
     category: "mythic",
     img: kraber,
     description: "Powerful bolt-action sniper rifle.",
-    icon: kraber_icon,
-    type: "Sniper",
-    ammo_icon: mythic_sniper_ammo_icon,
-    ammo: "Mythic Sniper Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
-    manufacturer: [
+    attachments: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "140",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "280 (2x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "112 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1209,56 +2389,108 @@ export const weaponStats = [
     category: "sniper",
     img: longbow_dmr,
     description: "Semi-auto sniper rifle.",
-    icon: longbow_dmr_icon,
-    type: "Sniper",
-    ammo_icon: sniper_ammo_icon,
-    ammo: "Sniper Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Wonyeon",
-        img: wonyeon_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "barrel",
-        img: barrel_mod_icon,
-      },
-      {
-        key: "magazine",
-        img: sniper_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: sniper_stock_icon,
-      },
-      {
-        key: "skullpiercer",
-        img: skull_piercer_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "55",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "118 (2.15x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "44 (0.8x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1268,48 +2500,108 @@ export const weaponStats = [
     category: "sniper",
     img: sentinel,
     description: "Bolt-action sniper rifle.",
-    icon: sentinel_icon,
-    type: "Sniper",
-    ammo_icon: sniper_ammo_icon,
-    ammo: "Sniper Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Paradinha Arsenal",
-        img: paradinha_arsenal_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: sniper_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: sniper_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "70",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "140 (2x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "63 (0.9x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1319,56 +2611,108 @@ export const weaponStats = [
     category: "shotgun",
     img: eva8_auto,
     description: "Full-auto shotgun.",
-    icon: eva8_auto_icon,
-    type: "Shotgun",
-    ammo_icon: shotgun_ammo_icon,
-    ammo: "Shotgun Shells",
-    fire_mode: [
+    profile: [
       {
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
         img: auto_icon,
-        value: "Auto",
       },
       {
-        img: burst_icon,
-        value: "Burst (2)",
-      },
-    ],
-    manufacturer: [
-      {
-        value: "Wonyeon",
-        img: wonyeon_icon,
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "shotgun bolt",
-        img: shotgun_bolt_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
-      },
-      {
-        key: "double tap trigger",
-        img: double_tap_trigger_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "7x8",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "9x8 (1.25x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "7x8",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1378,48 +2722,108 @@ export const weaponStats = [
     category: "shotgun",
     img: mastiff,
     description: "Powerful semi-auto shotgun.",
-    icon: mastiff_icon,
-    type: "Shotgun",
-    ammo_icon: shotgun_ammo_icon,
-    ammo: "Shotgun Shells",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "shotgun bolt",
-        img: shotgun_bolt_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "11x8",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "14x8 (1.25x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "11x8",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1429,48 +2833,108 @@ export const weaponStats = [
     category: "shotgun",
     img: mozambique,
     description: "Triple-barrel shotgun pistol.",
-    icon: mozambique_icon,
-    type: "Shotgun",
-    ammo_icon: shotgun_ammo_icon,
-    ammo: "Shotgun Shells",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Lastimosa Armory",
-        img: lastimosa_armory_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "shotgun bolt",
-        img: shotgun_bolt_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "hammerpoint rounds",
-        img: hammerpoint_rounds_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "15x3",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "19x3 (1.25x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "15x3",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1480,42 +2944,108 @@ export const weaponStats = [
     category: "shotgun",
     img: peacekeeper,
     description: "Lever-action shotgun.",
-    icon: peacekeeper_icon,
-    type: "Shotgun",
-    ammo_icon: shotgun_ammo_icon,
-    ammo: "Shotgun Shells",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "shotgun bolt",
-        img: shotgun_bolt_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "stock",
-        img: standard_stock_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "9x11",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "11x11 (1.25x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "9x11",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1525,46 +3055,108 @@ export const weaponStats = [
     category: "light",
     img: p2020,
     description: "Semi-auto pistol.",
-    icon: p2020_icon,
-    type: "Pistol",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
+      },
+      {
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "laser",
-        img: laser_sight_icon,
-      },
-      {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "hammerpoint rounds",
-        img: hammerpoint_rounds_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "18",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "27 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "16 (0.9x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1574,52 +3166,108 @@ export const weaponStats = [
     category: "light",
     img: re45,
     description: "Full-auto pistol.",
-    icon: re45_icon,
-    type: "Pistol",
-    ammo_icon: light_ammo_icon,
-    ammo: "Light Rounds",
-    fire_mode: [
+    profile: [
       {
-        img: auto_icon,
-        value: "Auto",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Paradinha Arsenal",
-        img: paradinha_arsenal_icon,
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "laser",
-        img: laser_sight_icon,
-      },
-      {
-        key: "magazine",
-        img: light_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "hammerpoint rounds",
-        img: hammerpoint_rounds_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "12",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "18 (1.5x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "11 (0.9x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },
@@ -1629,47 +3277,108 @@ export const weaponStats = [
     category: "sniper",
     img: wingman,
     description: "High-powered revolver.",
-    icon: wingman_icon,
-    type: "Pistol",
-    ammo_icon: sniper_ammo_icon,
-    ammo: "Sniper Ammo",
-    fire_mode: [
+    profile: [
       {
-        img: single_icon,
-        value: "Single",
+        title: "Icon",
+        img: r99_icon,
+        img_type: "gun",
       },
-    ],
-    manufacturer: [
       {
-        value: "Brockhaurd Manufacturing",
+        title: "Type",
+        text: "Sub machine gun",
+      },
+      {
+        title: "Ammo",
+        text: "Light Rounds",
+        img: light_ammo_icon,
+      },
+      {
+        title: "Fire modes",
+        text: "Auto",
+        img: auto_icon,
+      },
+      {
+        title: "Manufacturer",
+        multirow: [
+          {
+            text: "Lastimosa Armory",
+            img: lastimosa_armory_icon,
+          },
+        ],
       },
     ],
     attachments: [
       {
-        key: "magazine",
-        img: sniper_mag_icon,
-      },
-      {
-        key: "optics",
-        img: optics_icon,
-      },
-      {
-        key: "skullpiercer",
-        img: skull_piercer_icon,
+        alignment: "center",
+        multirow: [
+          {
+            alt: "laser",
+            img: laser_sight_icon,
+          },
+          {
+            alt: "magazine",
+            img: light_mag_icon,
+          },
+          {
+            alt: "optics",
+            img: optics_icon,
+          },
+          {
+            alt: "stock",
+            img: standard_stock_icon,
+          },
+        ],
       },
     ],
     damages: [
       {
-        key: "body",
-        value: "45",
+        alignment: "center",
+        title: "BODY",
+        values: [
+          {
+            text: "12",
+          },
+        ],
       },
       {
-        key: "head",
-        value: "97 (2.15x)",
+        alignment: "center",
+        title: "HEAD",
+        values: [
+          {
+            text: "18 (1.5x)",
+          },
+        ],
       },
       {
-        key: "legs",
-        value: "41 (0.9x)",
+        alignment: "center",
+        title: "LEGS",
+        values: [
+          {
+            text: "10 (0.8x)",
+          },
+        ],
+      },
+    ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
       },
     ],
   },

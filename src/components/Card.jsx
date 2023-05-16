@@ -2,7 +2,9 @@ import React from "react";
 
 import styled, { keyframes } from "styled-components";
 import { CategoryColorTheme } from "../utils/styleHelper.js";
-import CardRow from "./CardRow";
+
+import CardRows from "./CardRows.jsx";
+import CardColumns from "./CardColumns.jsx";
 
 const cardFocusAnimation = keyframes`
 0% { transform:scale(1); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
@@ -71,16 +73,11 @@ function Card({ weapon }) {
     title,
     img,
     description,
-    type,
-    icon,
-    ammo_icon,
-    ammo,
     category,
-    fire_mode,
-    manufacturer,
     attachments,
     damages,
     technical,
+    profile,
   } = weapon;
 
   return (
@@ -88,35 +85,23 @@ function Card({ weapon }) {
       <TitleStyle category={category}>{title}</TitleStyle>
       <ImageStyle src={img} alt="logo" />
       <DescriptionStyle>{description}</DescriptionStyle>
+
       <SubHeaderStyle>— Profile —</SubHeaderStyle>
-      <CardRow rowTitle="Icon" rowImg={icon} category={category}></CardRow>
-      <CardRow rowTitle="Type" rowData={type} category={category}></CardRow>
-      <CardRow
-        rowTitle="Ammo"
-        rowImg={ammo_icon}
-        rowData={ammo}
-        category={category}
-      ></CardRow>
-      <CardRow
-        rowTitle="Fire modes"
-        rowDataExtended={fire_mode}
-        category={category}
-      ></CardRow>
-      {manufacturer && (
-        <CardRow
-          rowTitle="Manufacturer"
-          rowDataExtended={manufacturer}
-          category={category}
-        ></CardRow>
-      )}
+      <CardRows category={category} rowData={profile}></CardRows>
+
+      {/* Not all weapons have attachments, IE: Kraber */}
       {attachments && (
         <>
           <SubHeaderStyle>— Attachment Slots —</SubHeaderStyle>
-          <CardRow rowImgs={attachments}></CardRow>
+          <CardRows category={category} rowData={attachments}></CardRows>
         </>
       )}
+
       <SubHeaderStyle>— Damage —</SubHeaderStyle>
-      <CardRow category={category} rowAttachments={damages}></CardRow>
+      <CardColumns category={category} colData={damages}></CardColumns>
+
+      <SubHeaderStyle>— Technical —</SubHeaderStyle>
+      <CardRows category={category} rowData={technical}></CardRows>
     </CardStyle>
   );
 }
