@@ -80,7 +80,9 @@ function Card({ weapon }) {
     manufacturer,
     attachments,
     damages,
+    technical,
   } = weapon;
+
   return (
     <CardStyle category={category}>
       <TitleStyle category={category}>{title}</TitleStyle>

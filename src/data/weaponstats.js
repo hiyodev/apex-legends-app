@@ -189,6 +189,28 @@ export const weaponStats = [
         value: "10 (0.8x)",
       },
     ],
+    technical: [
+      {
+        title: "RPM",
+        text: "1080",
+      },
+      {
+        title: "DPS",
+        text: "216",
+      },
+      {
+        title: "Magazine",
+        text: "19",
+      },
+      {
+        title: "Tac reload time",
+        text: "1.8",
+      },
+      {
+        title: "Full reload time",
+        text: "2.45",
+      },
+    ],
   },
   {
     id: 2,

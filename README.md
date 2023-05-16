@@ -1,18 +1,34 @@
-# Apex Legends Helper App
+# Apex Legends App ( 1 / 50 Apps )
+- Why did I make this?
+1. To learn and or practice the followings:
+    1. Replicating components from websites
+    2. Creating reuseable components
+    3. CSS styling and animation
+    4. HTML element table
+2. To become a better Frontend Developer.
+3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
-## Rank Calculator
-- Calculates the total amount of ranked points you can achieve after your ranked entry-cost based on the followings:
-1. Placement points
-2. Kills / assists
-3. Total RP after winning
 
-## Weapon damage calculator
-- Calculates the amount of DPS per weapon based on the followings:
-1. Legends with or without damage reductions
-2. Headshot damages based on rarity of opponent's helmet
-3. Size of weapon's magazine capacity
-4. Damage fall-off based on distance
+# App Summary
+## Weapon Card
+1. Simple app that shows all the weapons in Apex Legends
+2. This app references data and card style from https://apexlegends.fandom.com/
+3. The cards in my apps are the same as the cards in that website
 
-## Weapon projectile computation
-- In progress
 
+## Code Info
+1. Weapon data and assets are stored locally.
+2. styled-components for css styling.
+3. Javascript for code. 
+
+
+# Images
+- In Progress
+
+
+---------------------------------------------------------
+- Note to self
+1. State 3 purpose behind every project
+2. Provide 3 quick info about your app
+3. Provide a few images in here for quick reference
+---------------------------------------------------------
