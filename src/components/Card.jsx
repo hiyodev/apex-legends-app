@@ -21,7 +21,9 @@ const CardStyle = styled.div`
     return CategoryColorTheme(props.category).cardColor;
   }};
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+`;
 
+/*
   // Expand card on hover
   &:hover {
     animation-name: ${cardFocusAnimation};
@@ -29,7 +31,7 @@ const CardStyle = styled.div`
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
-`;
+*/
 
 const TitleStyle = styled.div`
   font-size: 2rem;

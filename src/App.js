@@ -1,17 +1,23 @@
-import "./App.css";
-
 // Data Import
 import { weaponStats } from "./data/weaponstats";
 
 import CardList from "./components/CardList";
+import styled from "styled-components";
+
+const AppStyle = styled.div`
+  padding: 3rem 1rem 0 1rem;
+  background-color: #282c34;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <CardList weaponStats={weaponStats} />
-      </header>
-    </div>
+    <AppStyle>
+      <CardList weaponStats={weaponStats} />
+    </AppStyle>
   );
 }
 
