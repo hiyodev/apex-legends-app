@@ -4,7 +4,7 @@
     1. Replicating components from websites
     2. Creating reuseable components
     3. CSS styling and animation
-    4. HTML element table
+    4. CSS Flexbox
 2. To become a better Frontend Developer.
 3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
@@ -13,7 +13,8 @@
 ## Weapon Card
 1. Simple app that shows all the weapons in Apex Legends
 2. This app references data and card style from https://apexlegends.fandom.com/
-3. The cards in my apps are the same as the cards in that website
+3. The cards in my apps are the same as the cards in that website with some minor styling differences
+4. Cards can be searched, sorted according to criterias and has some user interactivity
 
 
 ## Code Info
