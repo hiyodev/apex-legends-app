@@ -3,8 +3,9 @@
 1. To learn and or practice the followings:
     1. Replicating components from websites
     2. Creating reuseable components
-    3. CSS styling and animation
-    4. CSS Flexbox
+    3. Filtering Objects
+    4. CSS styling and animation
+    5. CSS Flexbox
 2. To become a better Frontend Developer.
 3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
 
@@ -19,17 +20,12 @@
 
 ## Code Info
 1. Weapon data and assets are stored locally.
-2. styled-components for css styling.
-3. Javascript for code. 
+2. 4 main components, CardList -> Card -> CardRows & CardColumns
+3. Card: For the card title, image, description
+4. CardRows: For the content with solid fill titles to the left
+5. CardColumns: For the content with solid fills on top
 
 
 # Images
 - In Progress
 
-
----------------------------------------------------------
-- Note to self
-1. State 3 purpose behind every project
-2. Provide 3 quick info about your app
-3. Provide a few images in here for quick reference
----------------------------------------------------------
