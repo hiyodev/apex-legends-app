@@ -1608,7 +1608,7 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: rampage,
+        img: rampage_icon,
         img_type: "gun",
       },
       {
@@ -1726,29 +1726,32 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: _3030_repeater_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Marksman weapon",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Heavy Rounds",
+        img: heavy_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Holdener Arms",
           },
         ],
       },
@@ -1758,12 +1761,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
             alt: "magazine",
-            img: light_mag_icon,
+            img: heavy_mag_icon,
           },
           {
             alt: "optics",
@@ -1771,7 +1770,11 @@ export const weaponStats = [
           },
           {
             alt: "stock",
-            img: standard_stock_icon,
+            img: sniper_stock_icon,
+          },
+          {
+            alt: "skullpiercer",
+            img: skull_piercer_icon,
           },
         ],
       },
@@ -1782,7 +1785,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "42~57",
           },
         ],
       },
@@ -1791,7 +1794,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "74~100 (1.75x)",
           },
         ],
       },
@@ -1800,7 +1803,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "36~48 (0.85x)",
           },
         ],
       },
@@ -1808,23 +1811,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "139",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "97",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "6",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "Segmented",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "Segmented",
       },
     ],
   },
@@ -1837,29 +1840,24 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: bocek_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Marksman weapon",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Mythic Arrows",
+        img: mythic_arrow_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
-      },
-      {
-        title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Single",
+            img: single_icon,
           },
         ],
       },
@@ -1869,20 +1867,12 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
-          },
-          {
             alt: "optics",
             img: optics_icon,
           },
           {
-            alt: "stock",
-            img: standard_stock_icon,
+            alt: "shatter caps",
+            img: shatter_caps_icon,
           },
         ],
       },
@@ -1893,7 +1883,10 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "25-70",
+          },
+          {
+            text: "35-84",
           },
         ],
       },
@@ -1902,7 +1895,10 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "32-122 (1.25x)-(1.75x)",
+          },
+          {
+            text: "42-105 (1.25x)",
           },
         ],
       },
@@ -1911,7 +1907,10 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "20-63 (0.8x)-(0.9x)",
+          },
+          {
+            text: "28-84 (0.8x)-(1x)",
           },
         ],
       },
@@ -1919,23 +1918,15 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "180-92",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "75-107",
       },
       {
         title: "Magazine",
-        text: "19",
-      },
-      {
-        title: "Tac reload time",
-        text: "1.8",
-      },
-      {
-        title: "Full reload time",
-        text: "2.45",
+        text: "60",
       },
     ],
   },
@@ -1948,12 +1939,12 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: g7_scout_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Marksman weapon",
       },
       {
         title: "Ammo",
@@ -1962,8 +1953,16 @@ export const weaponStats = [
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+          {
+            text: "Burst (2)",
+            img: double_tap_trigger_noborder_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
@@ -1980,8 +1979,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
+            alt: "barrel",
+            img: barrel_mod_icon,
           },
           {
             alt: "magazine",
@@ -1993,7 +1992,11 @@ export const weaponStats = [
           },
           {
             alt: "stock",
-            img: standard_stock_icon,
+            img: sniper_mag_icon,
+          },
+          {
+            alt: "double tap trigger",
+            img: double_tap_trigger_icon,
           },
         ],
       },
@@ -2004,7 +2007,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "32",
           },
         ],
       },
@@ -2013,7 +2016,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "56 (1.75x)",
           },
         ],
       },
@@ -2022,7 +2025,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "24 (0.75x)",
           },
         ],
       },
@@ -2030,23 +2033,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "240",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "128",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "10",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "2.16",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "2.7",
       },
     ],
   },
@@ -2059,29 +2062,33 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: triple_take_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Marksman weapon",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Energy Ammo",
+        img: energy_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Burrell Defense",
+            img: burrell_defense_icon,
           },
         ],
       },
@@ -2091,12 +2098,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
             alt: "magazine",
-            img: light_mag_icon,
+            img: energy_mag_icon,
           },
           {
             alt: "optics",
@@ -2104,7 +2107,7 @@ export const weaponStats = [
           },
           {
             alt: "stock",
-            img: standard_stock_icon,
+            img: sniper_stock_icon,
           },
         ],
       },
@@ -2115,7 +2118,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "21x3",
           },
         ],
       },
@@ -2124,7 +2127,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "37x3 (1.75x)",
           },
         ],
       },
@@ -2133,7 +2136,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "19x3 (0.9x)",
           },
         ],
       },
@@ -2141,23 +2144,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "81",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "85",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "6",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "2.34",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "3.06",
       },
     ],
   },
@@ -2170,29 +2173,33 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: charge_rifle_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Sniper",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Sniper Ammo",
+        img: sniper_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Vinson Dynamics",
+            img: vinson_dynamics_icon,
           },
         ],
       },
@@ -2202,20 +2209,12 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
-          },
-          {
             alt: "optics",
             img: optics_icon,
           },
           {
             alt: "stock",
-            img: standard_stock_icon,
+            img: sniper_stock_icon,
           },
         ],
       },
@@ -2226,7 +2225,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "3x15 + 45",
           },
         ],
       },
@@ -2235,7 +2234,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "4x15 + 56 (1.25x)",
           },
         ],
       },
@@ -2244,7 +2243,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "3x15 + 45",
           },
         ],
       },
@@ -2252,23 +2251,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "26",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "39",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "6 (3 shots)",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "4",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "5.1",
       },
     ],
   },
@@ -2281,22 +2280,26 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: kraber_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Sniper",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Mythic Sniper Ammo",
+        img: mythic_sniper_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
@@ -2308,36 +2311,13 @@ export const weaponStats = [
         ],
       },
     ],
-    attachments: [
-      {
-        alignment: "center",
-        multirow: [
-          {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
-          },
-          {
-            alt: "optics",
-            img: optics_icon,
-          },
-          {
-            alt: "stock",
-            img: standard_stock_icon,
-          },
-        ],
-      },
-    ],
     damages: [
       {
         alignment: "center",
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "140",
           },
         ],
       },
@@ -2346,7 +2326,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "280 (2x)",
           },
         ],
       },
@@ -2355,7 +2335,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "112 (0.8x)",
           },
         ],
       },
@@ -2363,23 +2343,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "25",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "58",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "4",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "3.2",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "4.3",
       },
     ],
   },
@@ -2392,22 +2372,26 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: longbow_dmr_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Sniper",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Sniper Ammo",
+        img: sniper_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
@@ -2424,12 +2408,12 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
+            alt: "barrel",
+            img: barrel_mod_icon,
           },
           {
             alt: "magazine",
-            img: light_mag_icon,
+            img: sniper_mag_icon,
           },
           {
             alt: "optics",
@@ -2437,7 +2421,11 @@ export const weaponStats = [
           },
           {
             alt: "stock",
-            img: standard_stock_icon,
+            img: sniper_stock_icon,
+          },
+          {
+            alt: "skullpiercer",
+            img: skull_piercer_icon,
           },
         ],
       },
@@ -2448,7 +2436,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "55",
           },
         ],
       },
@@ -2457,7 +2445,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "118 (2.15x)",
           },
         ],
       },
@@ -2466,7 +2454,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "44 (0.8x)",
           },
         ],
       },
@@ -2474,23 +2462,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "78",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "72",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "6",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "2.66",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "3.66",
       },
     ],
   },
@@ -2503,29 +2491,33 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: sentinel_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Sniper",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Sniper Ammo",
+        img: sniper_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Paradinha Arsenal",
+            img: paradinha_arsenal_icon,
           },
         ],
       },
@@ -2535,12 +2527,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
             alt: "magazine",
-            img: light_mag_icon,
+            img: sniper_mag_icon,
           },
           {
             alt: "optics",
@@ -2548,7 +2536,7 @@ export const weaponStats = [
           },
           {
             alt: "stock",
-            img: standard_stock_icon,
+            img: sniper_stock_icon,
           },
         ],
       },
@@ -2559,7 +2547,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "70",
           },
         ],
       },
@@ -2568,7 +2556,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "140 (2x)",
           },
         ],
       },
@@ -2577,7 +2565,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "63 (0.9x)",
           },
         ],
       },
@@ -2585,23 +2573,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "31-38",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "36-45",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "4",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "2.5",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "3.6",
       },
     ],
   },
@@ -2614,29 +2602,37 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: eva8_auto_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Shotgun",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Shotgun Shells",
+        img: shotgun_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+          {
+            text: "Burst (2)",
+            img: double_tap_trigger_noborder_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Wonyeon",
+            img: wonyeon_icon,
           },
         ],
       },
@@ -2646,12 +2642,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
+            alt: "shotgun bolt",
+            img: shotgun_bolt_icon,
           },
           {
             alt: "optics",
@@ -2660,6 +2652,10 @@ export const weaponStats = [
           {
             alt: "stock",
             img: standard_stock_icon,
+          },
+          {
+            alt: "double tap trigger",
+            img: double_tap_trigger_icon,
           },
         ],
       },
@@ -2670,7 +2666,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "7x8",
           },
         ],
       },
@@ -2679,7 +2675,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "9x8 (1.25x)",
           },
         ],
       },
@@ -2688,7 +2684,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "7x8",
           },
         ],
       },
@@ -2696,23 +2692,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "138",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "129",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "8",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "2.75",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "3.0",
       },
     ],
   },
@@ -2725,22 +2721,26 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: mastiff_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Shotgun",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Shotgun Shells",
+        img: shotgun_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
@@ -2757,12 +2757,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
+            alt: "shotgun bolt",
+            img: shotgun_bolt_icon,
           },
           {
             alt: "optics",
@@ -2781,7 +2777,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "11x8",
           },
         ],
       },
@@ -2790,7 +2786,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "14x8 (1.25x)",
           },
         ],
       },
@@ -2799,7 +2795,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "11x8",
           },
         ],
       },
@@ -2807,23 +2803,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "66",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "97",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "5",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "Segmented",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "Segmented",
       },
     ],
   },
@@ -2836,29 +2832,32 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: mozambique_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Shotgun",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Shotgun Shells",
+        img: shotgun_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Altamirano Armory",
           },
         ],
       },
@@ -2868,20 +2867,16 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
+            alt: "shotgun bolt",
+            img: shotgun_bolt_icon,
           },
           {
             alt: "optics",
             img: optics_icon,
           },
           {
-            alt: "stock",
-            img: standard_stock_icon,
+            alt: "hammerpoint rounds",
+            img: hammerpoint_rounds_icon,
           },
         ],
       },
@@ -2892,7 +2887,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "15x3",
           },
         ],
       },
@@ -2901,7 +2896,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "19x3 (1.25x)",
           },
         ],
       },
@@ -2910,7 +2905,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "15x3",
           },
         ],
       },
@@ -2918,23 +2913,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "132",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "99",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "6",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "1.9",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "2.4",
       },
     ],
   },
@@ -2947,29 +2942,24 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: peacekeeper_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Shotgun",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Shotgun Shells",
+        img: shotgun_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
-      },
-      {
-        title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Single",
+            img: single_icon,
           },
         ],
       },
@@ -2979,12 +2969,8 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
-            alt: "magazine",
-            img: light_mag_icon,
+            alt: "shotgun bolt",
+            img: shotgun_bolt_icon,
           },
           {
             alt: "optics",
@@ -3003,7 +2989,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "9x11",
           },
         ],
       },
@@ -3012,7 +2998,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "11x11 (1.25x)",
           },
         ],
       },
@@ -3021,7 +3007,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "9x11",
           },
         ],
       },
@@ -3029,23 +3015,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "44",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "73",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "5",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "2.5",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "3.5",
       },
     ],
   },
@@ -3058,12 +3044,12 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: p2020_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Pistol",
       },
       {
         title: "Ammo",
@@ -3072,8 +3058,12 @@ export const weaponStats = [
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
@@ -3102,8 +3092,8 @@ export const weaponStats = [
             img: optics_icon,
           },
           {
-            alt: "stock",
-            img: standard_stock_icon,
+            alt: "hammerpoint rounds",
+            img: hammerpoint_rounds_icon,
           },
         ],
       },
@@ -3114,7 +3104,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "18",
           },
         ],
       },
@@ -3123,7 +3113,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "27 (1.5x)",
           },
         ],
       },
@@ -3132,7 +3122,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "16 (0.9x)",
           },
         ],
       },
@@ -3140,23 +3130,19 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "4240",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "126",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "14",
       },
       {
-        title: "Tac reload time",
-        text: "1.8",
-      },
-      {
-        title: "Full reload time",
-        text: "2.45",
+        title: "Reload time",
+        text: "1.25",
       },
     ],
   },
@@ -3169,12 +3155,12 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: re45_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Pistol",
       },
       {
         title: "Ammo",
@@ -3183,15 +3169,19 @@ export const weaponStats = [
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Auto",
+            img: auto_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Paradinha Arsenal",
+            img: paradinha_arsenal_icon,
           },
         ],
       },
@@ -3213,8 +3203,8 @@ export const weaponStats = [
             img: optics_icon,
           },
           {
-            alt: "stock",
-            img: standard_stock_icon,
+            alt: "hammerpoint rounds",
+            img: hammerpoint_rounds_icon,
           },
         ],
       },
@@ -3243,7 +3233,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "11 (0.9x)",
           },
         ],
       },
@@ -3251,23 +3241,23 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "780",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "182",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "25",
       },
       {
         title: "Tac reload time",
-        text: "1.8",
+        text: "1.5",
       },
       {
         title: "Full reload time",
-        text: "2.45",
+        text: "1.95",
       },
     ],
   },
@@ -3280,29 +3270,32 @@ export const weaponStats = [
     profile: [
       {
         title: "Icon",
-        img: r99_icon,
+        img: wingman_icon,
         img_type: "gun",
       },
       {
         title: "Type",
-        text: "Sub machine gun",
+        text: "Pistol",
       },
       {
         title: "Ammo",
-        text: "Light Rounds",
-        img: light_ammo_icon,
+        text: "Sniper Ammo",
+        img: sniper_ammo_icon,
       },
       {
         title: "Fire modes",
-        text: "Auto",
-        img: auto_icon,
+        multirow: [
+          {
+            text: "Single",
+            img: single_icon,
+          },
+        ],
       },
       {
         title: "Manufacturer",
         multirow: [
           {
-            text: "Lastimosa Armory",
-            img: lastimosa_armory_icon,
+            text: "Brockhaurd Manufacturing",
           },
         ],
       },
@@ -3312,20 +3305,16 @@ export const weaponStats = [
         alignment: "center",
         multirow: [
           {
-            alt: "laser",
-            img: laser_sight_icon,
-          },
-          {
             alt: "magazine",
-            img: light_mag_icon,
+            img: sniper_mag_icon,
           },
           {
             alt: "optics",
             img: optics_icon,
           },
           {
-            alt: "stock",
-            img: standard_stock_icon,
+            alt: "skullpiercer",
+            img: skull_piercer_icon,
           },
         ],
       },
@@ -3336,7 +3325,7 @@ export const weaponStats = [
         title: "BODY",
         values: [
           {
-            text: "12",
+            text: "45",
           },
         ],
       },
@@ -3345,7 +3334,7 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "97 (2.15x)",
           },
         ],
       },
@@ -3354,7 +3343,7 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "41 (0.9x)",
           },
         ],
       },
@@ -3362,23 +3351,19 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "1080",
+        text: "156",
       },
       {
         title: "DPS",
-        text: "216",
+        text: "117",
       },
       {
         title: "Magazine",
-        text: "19",
+        text: "6",
       },
       {
-        title: "Tac reload time",
-        text: "1.8",
-      },
-      {
-        title: "Full reload time",
-        text: "2.45",
+        title: "Reload time",
+        text: "2.1",
       },
     ],
   },

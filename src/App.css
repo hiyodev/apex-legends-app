@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 20vmin;
-  pointer-events: none;
-}
-
 .App-header {
   padding: 0 1rem 0 1rem;
   background-color: #282c34;
@@ -16,8 +11,4 @@
   font-size: calc(5px + 2vmin);
   color: black;
   flex-wrap: wrap;
-}
-
-.App-link {
-  color: #61dafb;
 }
