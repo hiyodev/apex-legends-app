@@ -37,7 +37,7 @@ function NavBar(props) {
             }))
           }
         >
-          Light{!sortByAmmo.light && "*"}
+          Light{sortByAmmo.light && "*"}
         </button>
 
         <button
@@ -48,7 +48,7 @@ function NavBar(props) {
             }))
           }
         >
-          Heavy{!sortByAmmo.heavy && "*"}
+          Heavy{sortByAmmo.heavy && "*"}
         </button>
 
         <button
@@ -59,7 +59,7 @@ function NavBar(props) {
             }))
           }
         >
-          Energy{!sortByAmmo.energy && "*"}
+          Energy{sortByAmmo.energy && "*"}
         </button>
 
         <button
@@ -70,7 +70,7 @@ function NavBar(props) {
             }))
           }
         >
-          Sniper{!sortByAmmo.sniper && "*"}
+          Sniper{sortByAmmo.sniper && "*"}
         </button>
       </ButtonRowStyle>
     </NavBarStyle>
