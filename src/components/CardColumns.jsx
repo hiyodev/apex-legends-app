@@ -9,7 +9,6 @@ const ContentContainer = styled.div`
 `;
 
 const RowHeaderStyle = styled.div`
-  flex: 1;
   font-weight: bold;
   font-size: 1.1rem;
   text-align: ${(props) => {
@@ -26,13 +25,27 @@ const RowHeaderStyle = styled.div`
 `;
 
 const ColumnContentStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.1rem;
+`;
+
+const ColumnSubContentStyle = styled.div`
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 0.25rem;
 `;
 
 const ColumnWrapper = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+`;
+
+const ColumnIconStyle = styled.img`
+  max-width: 1.75rem;
+  padding: 0.2rem 0.1rem 0rem 0;
 `;
 
 function CardColumns(props) {
@@ -44,8 +57,18 @@ function CardColumns(props) {
         <RowHeaderStyle category={category} alignment={alignment}>
           {title}
         </RowHeaderStyle>
-        {values?.map(({ text }, index) => {
-          return <ColumnContentStyle key={index}>{text}</ColumnContentStyle>;
+        {values?.map(({ text, subtext, img }, index) => {
+          return (
+            <Fragment key={index}>
+              <ColumnContentStyle>
+                {img && <ColumnIconStyle src={img}></ColumnIconStyle>}
+                {text}
+              </ColumnContentStyle>
+              {subtext && (
+                <ColumnSubContentStyle>{subtext}</ColumnSubContentStyle>
+              )}
+            </Fragment>
+          );
         })}
       </ColumnWrapper>
     );

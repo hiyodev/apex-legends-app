@@ -89,9 +89,11 @@ import wingman_icon from "../images/pistol_icon/wingman_icon.svg";
 // Ammo
 import light_ammo_icon from "../images/ammo/light_ammo_icon.svg";
 import heavy_ammo_icon from "../images/ammo/heavy_ammo_icon.svg";
+import heavy_ammo_revved_icon from "../images/ammo/heavy_ammo_revved_icon.svg";
 import heavylight_ammo_icon from "../images/ammo/heavylight_ammo_icon.svg";
 import energy_ammo_icon from "../images/ammo/energy_ammo_icon.svg";
 import sniper_ammo_icon from "../images/ammo/sniper_ammo_icon.svg";
+import sniper_ammo_amped_icon from "../images/ammo/sniper_ammo_amped.webp";
 import shotgun_ammo_icon from "../images/ammo/shotgun_ammo_icon.svg";
 import mythic_heavy_ammo_icon from "../images/ammo/mythic_heavy_ammo_icon.svg";
 import mythic_energy_ammo_icon from "../images/ammo/mythic_energy_ammo_icon.svg";
@@ -110,14 +112,20 @@ import optics_icon from "../images/attachments/optics.svg";
 import standard_stock_icon from "../images/attachments/standard_stock.svg";
 import sniper_stock_icon from "../images/attachments/sniper_stock.svg";
 import turbocharger_icon from "../images/attachments/turbocharger.svg";
+import turbocharger_noborder_icon from "../images/attachments/turbocharger_noborder.svg";
 import boosted_loader_icon from "../images/attachments/boosted_loader.svg";
+import boosted_loader_noborder_icon from "../images/attachments/boosted_loader_noborder.svg";
 import disruptor_rounds_icon from "../images/attachments/disruptor_rounds.svg";
+import disruptor_rounds_noborder_icon from "../images/attachments/disruptor_rounds_noborder.svg";
 import shatter_caps_icon from "../images/attachments/shatter_caps.svg";
 import double_tap_trigger_icon from "../images/attachments/double_tap_trigger.svg";
 import double_tap_trigger_noborder_icon from "../images/attachments/double_tap_trigger_noborder.svg";
 import hammerpoint_rounds_icon from "../images/attachments/hammerpoint_rounds.svg";
+import hammerpoint_rounds_noborder_icon from "../images/attachments/hammerpoint_rounds_noborder.svg";
 import skull_piercer_icon from "../images/attachments/skull_piercer.svg";
+import skull_piercer_noborder_icon from "../images/attachments/skull_piercer_noborder.svg";
 import shotgun_bolt_icon from "../images/attachments/shotgun_bolt.svg";
+import shatter_caps_noborder_icon from "../images/attachments/shatter_caps_noborder.svg";
 
 // Fire Modes
 import auto_icon from "../images/others/auto_icon.svg";
@@ -209,7 +217,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "18",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -218,7 +227,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "10",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -316,7 +326,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "20 (1.5x)",
+            text: "20",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -325,7 +336,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.8x)",
+            text: "10 ",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -418,7 +430,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "23 (1.5x)",
+            text: "23",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -427,7 +440,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "12 (0.8x)",
+            text: "12",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -529,7 +543,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "24 (1.5x)",
+            text: "24",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -538,7 +553,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "13 (0.8x)",
+            text: "13",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -640,7 +656,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "22 (1.5x)",
+            text: "22",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -649,7 +666,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "12 (0.8x)",
+            text: "12",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -749,6 +767,7 @@ export const weaponStats = [
             text: "18",
           },
           {
+            img: turbocharger_noborder_icon,
             text: "17",
           },
         ],
@@ -758,10 +777,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "32 (1.75x)",
+            text: "32",
+            subtext: "(1.75x)",
           },
           {
-            text: "30 (1.75x)",
+            img: turbocharger_noborder_icon,
+            text: "30",
+            subtext: "(1.75x)",
           },
         ],
       },
@@ -770,10 +792,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "15 (0.85x)",
+            text: "15",
+            subtext: "(0.85x)",
           },
           {
-            text: "14 (0.85x)",
+            img: turbocharger_noborder_icon,
+            text: "14",
+            subtext: "(0.85x)",
           },
         ],
       },
@@ -785,7 +810,15 @@ export const weaponStats = [
       },
       {
         title: "DPS",
-        text: "202",
+        multirow: [
+          {
+            text: "202",
+          },
+          {
+            img: turbocharger_noborder_icon,
+            text: "190",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -875,7 +908,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "32 (1.75x)",
+            text: "32",
+            subtext: "(1.75x)",
           },
         ],
       },
@@ -884,7 +918,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "14 (0.75x)",
+            text: "14",
+            subtext: "(0.75x)",
           },
         ],
       },
@@ -986,7 +1021,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "40 (1.8x)",
+            text: "40",
+            subtext: "(1.8x)",
           },
         ],
       },
@@ -995,7 +1031,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "17 (0.75x)",
+            text: "17",
+            subtext: "(0.75x)",
           },
         ],
       },
@@ -1003,19 +1040,53 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "414",
+        multirow: [
+          {
+            img: burst_icon,
+            text: "414",
+          },
+          {
+            img: single_icon,
+            text: "384",
+          },
+        ],
       },
       {
         title: "DPS",
-        text: "159",
+        multirow: [
+          {
+            img: burst_icon,
+            text: "159",
+          },
+          {
+            img: single_icon,
+            text: "147",
+          },
+        ],
       },
       {
         title: "Magazine",
-        text: "30",
+        multirow: [
+          {
+            text: "30",
+          },
+          {
+            img: boosted_loader_noborder_icon,
+            text: "39",
+          },
+        ],
       },
       {
         title: "Tac reload time",
-        text: "2.16",
+        multirow: [
+          {
+            text: "2.16",
+          },
+          {
+            img: boosted_loader_noborder_icon,
+            text: "1.75",
+          },
+        ],
       },
       {
         title: "Full reload time",
@@ -1105,7 +1176,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "23 (1.75x)",
+            text: "23",
+            subtext: "(1.75x)",
           },
         ],
       },
@@ -1114,7 +1186,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "10 (0.75x)",
+            text: "10",
+            subtext: "(0.75x)",
           },
         ],
       },
@@ -1224,7 +1297,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "30 (1.75x)",
+            text: "30",
+            subtext: "(1.75x)",
           },
         ],
       },
@@ -1233,7 +1307,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "13 (0.75x)",
+            text: "13",
+            subtext: "(0.75x)",
           },
         ],
       },
@@ -1324,6 +1399,7 @@ export const weaponStats = [
             text: "15",
           },
           {
+            img: turbocharger_noborder_icon,
             text: "14",
           },
         ],
@@ -1333,10 +1409,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "23 (1.5x)",
+            text: "23",
+            subtext: "(1.5x)",
           },
           {
-            text: "21 (1.5x)",
+            img: turbocharger_noborder_icon,
+            text: "21",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -1345,10 +1424,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "13 (0.85x)",
+            text: "13",
+            subtext: "(0.85x)",
           },
           {
-            text: "12 (0.85x)",
+            img: turbocharger_noborder_icon,
+            text: "12",
+            subtext: "0.85x)",
           },
         ],
       },
@@ -1356,11 +1438,27 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "300-900",
+        multirow: [
+          {
+            text: "300-900",
+          },
+          {
+            img: turbocharger_noborder_icon,
+            text: "408-900",
+          },
+        ],
       },
       {
         title: "DPS",
-        text: "75-225",
+        multirow: [
+          {
+            text: "75-225",
+          },
+          {
+            img: turbocharger_noborder_icon,
+            text: "95-210",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -1440,6 +1538,7 @@ export const weaponStats = [
             text: "16",
           },
           {
+            img: disruptor_rounds_noborder_icon,
             text: "25",
           },
         ],
@@ -1449,10 +1548,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "24 (1.5x)",
+            text: "24",
+            subtext: "(1.5x)",
           },
           {
+            img: disruptor_rounds_noborder_icon,
             text: "38 (1.5x)",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -1461,10 +1563,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "14 (0.85x)",
+            text: "14",
+            subtext: "(0.85x)",
           },
           {
-            text: "21 (0.85x)",
+            img: disruptor_rounds_noborder_icon,
+            text: "21",
+            subtext: "(0.85x)",
           },
         ],
       },
@@ -1476,11 +1581,19 @@ export const weaponStats = [
       },
       {
         title: "DPS",
-        text: "160",
+        multirow: [
+          {
+            text: "160",
+          },
+          {
+            img: disruptor_rounds_noborder_icon,
+            text: "250",
+          },
+        ],
       },
       {
         title: "Magazine",
-        text: "∞",
+        text: "324",
       },
       {
         title: "Reload time",
@@ -1562,7 +1675,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "27 (1.5x)",
+            text: "27",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -1571,7 +1685,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "15 (0.85x)",
+            text: "15",
+            subtext: "(0.85x)",
           },
         ],
       },
@@ -1680,7 +1795,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "39 (1.5x)",
+            text: "39",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -1689,7 +1805,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "22 (0.85x)",
+            text: "22",
+            subtext: "0.85x)",
           },
         ],
       },
@@ -1697,11 +1814,27 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "300",
+        multirow: [
+          {
+            text: "300",
+          },
+          {
+            img: heavy_ammo_revved_icon,
+            text: "390",
+          },
+        ],
       },
       {
         title: "DPS",
-        text: "130",
+        multirow: [
+          {
+            text: "130",
+          },
+          {
+            img: heavy_ammo_revved_icon,
+            text: "169",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -1794,7 +1927,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "74~100 (1.75x)",
+            text: "74~100",
+            subtext: "(1.75x)",
+          },
+          {
+            img: skull_piercer_noborder_icon,
+            text: "88-120",
+            subtext: "(2.1x)",
           },
         ],
       },
@@ -1803,7 +1942,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "36~48 (0.85x)",
+            text: "36~48",
+            subtext: "(0.85x)",
           },
         ],
       },
@@ -1886,6 +2026,7 @@ export const weaponStats = [
             text: "25-70",
           },
           {
+            img: shatter_caps_noborder_icon,
             text: "35-84",
           },
         ],
@@ -1895,10 +2036,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "32-122 (1.25x)-(1.75x)",
+            text: "32-122",
+            subtext: "(1.25x)-(1.75x)",
           },
           {
-            text: "42-105 (1.25x)",
+            img: shatter_caps_noborder_icon,
+            text: "42-105",
+            subtext: "(1.25x)",
           },
         ],
       },
@@ -1907,10 +2051,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "20-63 (0.8x)-(0.9x)",
+            text: "20-63",
+            subtext: "(0.8x)-(0.9x)",
           },
           {
-            text: "28-84 (0.8x)-(1x)",
+            img: shatter_caps_noborder_icon,
+            text: "28-84",
+            subtext: "(0.8x)-(1x)",
           },
         ],
       },
@@ -1922,7 +2069,15 @@ export const weaponStats = [
       },
       {
         title: "DPS",
-        text: "75-107",
+        multirow: [
+          {
+            text: "75-107",
+          },
+          {
+            img: shatter_caps_noborder_icon,
+            text: "105-129",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -2016,7 +2171,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "56 (1.75x)",
+            text: "56",
+            subtext: "(1.75x)",
           },
         ],
       },
@@ -2025,7 +2181,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "24 (0.75x)",
+            text: "24",
+            subtext: "(0.75x)",
           },
         ],
       },
@@ -2033,11 +2190,27 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "240",
+        multirow: [
+          {
+            text: "240",
+          },
+          {
+            img: double_tap_trigger_noborder_icon,
+            text: "253",
+          },
+        ],
       },
       {
         title: "DPS",
-        text: "128",
+        multirow: [
+          {
+            text: "128",
+          },
+          {
+            img: double_tap_trigger_noborder_icon,
+            text: "135",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -2127,7 +2300,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "37x3 (1.75x)",
+            text: "37x3",
+            subtext: "(1.75x)",
           },
         ],
       },
@@ -2136,7 +2310,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "19x3 (0.9x)",
+            text: "19x3",
+            subtext: "(0.9x)",
           },
         ],
       },
@@ -2234,7 +2409,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "4x15 + 56 (1.25x)",
+            text: "4x15 + 56",
+            subtext: "(1.25x)",
           },
         ],
       },
@@ -2326,7 +2502,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "280 (2x)",
+            text: "280",
+            subtext: "(2x)",
           },
         ],
       },
@@ -2335,7 +2512,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "112 (0.8x)",
+            text: "112",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -2445,7 +2623,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "118 (2.15x)",
+            text: "118",
+            subtext: "(2.15x)",
+          },
+          {
+            img: skull_piercer_noborder_icon,
+            text: "138",
+            subtext: "(2.5x)",
           },
         ],
       },
@@ -2454,7 +2638,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "44 (0.8x)",
+            text: "44",
+            subtext: "(0.8x)",
           },
         ],
       },
@@ -2549,6 +2734,10 @@ export const weaponStats = [
           {
             text: "70",
           },
+          {
+            img: sniper_ammo_amped_icon,
+            text: "88",
+          },
         ],
       },
       {
@@ -2556,7 +2745,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "140 (2x)",
+            text: "140",
+            subtext: "(2x)",
+          },
+          {
+            img: sniper_ammo_amped_icon,
+            text: "176",
+            subtext: "(2x)",
           },
         ],
       },
@@ -2565,7 +2760,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "63 (0.9x)",
+            text: "63",
+            subtext: "(0.9x)",
+          },
+          {
+            img: sniper_ammo_amped_icon,
+            text: "79",
+            subtext: "(0.9x)",
           },
         ],
       },
@@ -2577,7 +2778,15 @@ export const weaponStats = [
       },
       {
         title: "DPS",
-        text: "36-45",
+        multirow: [
+          {
+            text: "36-45",
+          },
+          {
+            img: sniper_ammo_amped_icon,
+            text: "44-58",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -2675,7 +2884,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "9x8 (1.25x)",
+            text: "9x8",
+            subtext: "(1.25x)",
           },
         ],
       },
@@ -2786,7 +2996,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "14x8 (1.25x)",
+            text: "14x8",
+            subtext: "(1.25x)",
           },
         ],
       },
@@ -2889,6 +3100,10 @@ export const weaponStats = [
           {
             text: "15x3",
           },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "20x3",
+          },
         ],
       },
       {
@@ -2896,7 +3111,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "19x3 (1.25x)",
+            text: "19x3",
+            subtext: "(1.25x)",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "25x3",
+            subtext: "(1.25x)",
           },
         ],
       },
@@ -2906,6 +3127,10 @@ export const weaponStats = [
         values: [
           {
             text: "15x3",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "20x3",
           },
         ],
       },
@@ -2998,7 +3223,8 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "11x11 (1.25x)",
+            text: "11x11",
+            subtext: "(1.25x)",
           },
         ],
       },
@@ -3106,6 +3332,10 @@ export const weaponStats = [
           {
             text: "18",
           },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "27",
+          },
         ],
       },
       {
@@ -3113,7 +3343,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "27 (1.5x)",
+            text: "27",
+            subtext: "(1.5x)",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "41",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -3122,7 +3358,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "16 (0.9x)",
+            text: "16",
+            subtext: "(0.9x)",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "24",
+            subtext: "(0.9x)",
           },
         ],
       },
@@ -3130,7 +3372,7 @@ export const weaponStats = [
     technical: [
       {
         title: "RPM",
-        text: "4240",
+        text: "420",
       },
       {
         title: "DPS",
@@ -3217,6 +3459,10 @@ export const weaponStats = [
           {
             text: "12",
           },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "16",
+          },
         ],
       },
       {
@@ -3224,7 +3470,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "18 (1.5x)",
+            text: "18",
+            subtext: "(1.5x)",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "24",
+            subtext: "(1.5x)",
           },
         ],
       },
@@ -3233,7 +3485,13 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "11 (0.9x)",
+            text: "11",
+            subtext: "(0.9x)",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "14",
+            subtext: "(0.9x)",
           },
         ],
       },
@@ -3245,7 +3503,15 @@ export const weaponStats = [
       },
       {
         title: "DPS",
-        text: "182",
+        multirow: [
+          {
+            text: "182",
+          },
+          {
+            img: hammerpoint_rounds_noborder_icon,
+            text: "208",
+          },
+        ],
       },
       {
         title: "Magazine",
@@ -3334,7 +3600,13 @@ export const weaponStats = [
         title: "HEAD",
         values: [
           {
-            text: "97 (2.15x)",
+            text: "97",
+            subtext: "(2.15x)",
+          },
+          {
+            img: skull_piercer_noborder_icon,
+            text: "113",
+            subtext: "(2.5x)",
           },
         ],
       },
@@ -3343,7 +3615,8 @@ export const weaponStats = [
         title: "LEGS",
         values: [
           {
-            text: "41 (0.9x)",
+            text: "41",
+            subtext: "(0.9x)",
           },
         ],
       },
