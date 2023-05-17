@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import ApexLogo from "../images/apex_logo.png";
 
 const NavBarStyle = styled.div`
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 10px;
 `;
 
-const LogoStyle = styled.div``;
-
-const SearchBarStyle = styled.input`
-  border: none;
+const LogoStyle = styled.img`
+  max-height: 5rem;
+  object-fit: contain;
 `;
+
+const SearchBarStyle = styled.input``;
 
 const ButtonRowStyle = styled.div``;
 
@@ -18,7 +22,7 @@ function NavBar(props) {
   const { setSearchString, setSortByAmmo, sortByAmmo } = props;
   return (
     <NavBarStyle>
-      <LogoStyle>LOGO</LogoStyle>
+      <LogoStyle src={ApexLogo}></LogoStyle>
       <SearchBarStyle
         type="text"
         placeholder="Search..."
