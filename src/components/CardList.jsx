@@ -5,13 +5,10 @@ import NavBar from "./NavBar";
 
 import styled from "styled-components";
 
-const AppStyle = styled.div`
-  padding: 4rem 1rem 0 1rem;
-  background-color: #282c34;
+const CardWrapper = styled.div`
   display: flex;
-  text-align: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 function CardList(props) {
@@ -21,17 +18,21 @@ function CardList(props) {
     heavy: true,
     energy: true,
     sniper: true,
+    shotgun: true,
+    mythic: true,
   });
   const { weaponStats } = props;
 
   const weaponList = weaponStats
     .filter((weapon) => {
-      const { light, heavy, energy, sniper } = sortByAmmo;
+      const { light, heavy, energy, sniper, shotgun, mythic } = sortByAmmo;
 
       if (light && weapon.category === "light") return weapon;
       if (heavy && weapon.category === "heavy") return weapon;
       if (energy && weapon.category === "energy") return weapon;
       if (sniper && weapon.category === "sniper") return weapon;
+      if (shotgun && weapon.category === "shotgun") return weapon;
+      if (mythic && weapon.category === "mythic") return weapon;
       return null;
     })
     .map((weapon) => {
@@ -47,14 +48,14 @@ function CardList(props) {
     });
 
   return (
-    <AppStyle>
+    <>
       <NavBar
         setSearchString={setSearchString}
         setSortByAmmo={setSortByAmmo}
         sortByAmmo={sortByAmmo}
       ></NavBar>
-      {weaponList}
-    </AppStyle>
+      <CardWrapper>{weaponList}</CardWrapper>
+    </>
   );
 }
 

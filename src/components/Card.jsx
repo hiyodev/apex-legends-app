@@ -13,7 +13,7 @@ const cardFocusAnimation = keyframes`
 
 const CardStyle = styled.div`
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 0.5em;
   border: 1px solid white;
   width: 25rem;
   height: auto;
@@ -43,7 +43,7 @@ const TitleStyle = styled.div`
 `;
 
 const ImageStyle = styled.img`
-  padding-top: 0.5rem;
+  padding-top: 0.5em;
   width: 90%;
   object-fit: contain;
 `;
@@ -56,7 +56,7 @@ const DescriptionStyle = styled.div`
 const SubHeaderStyle = styled.div`
   font-weight: bold;
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.5em;
   letter-spacing: 0.05rem;
 `;
 

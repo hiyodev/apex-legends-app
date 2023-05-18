@@ -1,22 +1,37 @@
 import React from "react";
 import styled from "styled-components";
 import ApexLogo from "../images/apex_logo.png";
+import AmmoButton from "./AmmoButton";
+
+import {
+  light_ammo_icon,
+  heavy_ammo_icon,
+  energy_ammo_icon,
+  sniper_ammo_icon,
+  shotgun_ammo_icon,
+  mythic_arrow_ammo_icon,
+} from "../data/weaponstats";
 
 const NavBarStyle = styled.div`
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  max-width: 25rem;
 `;
 
 const LogoStyle = styled.img`
-  max-height: 5rem;
+  max-height: 4rem;
+  padding-right: 1rem;
   object-fit: contain;
 `;
 
-const SearchBarStyle = styled.input``;
-
-const ButtonRowStyle = styled.div``;
+const SearchBarStyle = styled.input`
+  min-width: 15rem;
+  max-width: 35rem;
+  height: 1.5rem;
+`;
 
 function NavBar(props) {
   const { setSearchString, setSortByAmmo, sortByAmmo } = props;
@@ -28,51 +43,47 @@ function NavBar(props) {
         placeholder="Search..."
         onChange={(e) => setSearchString(e.target.value.toLowerCase())}
       ></SearchBarStyle>
-      <ButtonRowStyle>
-        <button
-          onClick={() =>
-            setSortByAmmo((currAmmo) => ({
-              ...currAmmo,
-              light: !currAmmo.light,
-            }))
-          }
-        >
-          Light{sortByAmmo.light && "*"}
-        </button>
+      <AmmoButton
+        img={light_ammo_icon}
+        setSortByAmmo={setSortByAmmo}
+        sortByAmmo={sortByAmmo}
+        ammoType={"light"}
+      ></AmmoButton>
 
-        <button
-          onClick={() =>
-            setSortByAmmo((currAmmo) => ({
-              ...currAmmo,
-              heavy: !currAmmo.heavy,
-            }))
-          }
-        >
-          Heavy{sortByAmmo.heavy && "*"}
-        </button>
+      <AmmoButton
+        img={heavy_ammo_icon}
+        setSortByAmmo={setSortByAmmo}
+        sortByAmmo={sortByAmmo}
+        ammoType={"heavy"}
+      ></AmmoButton>
 
-        <button
-          onClick={() =>
-            setSortByAmmo((currAmmo) => ({
-              ...currAmmo,
-              energy: !currAmmo.energy,
-            }))
-          }
-        >
-          Energy{sortByAmmo.energy && "*"}
-        </button>
+      <AmmoButton
+        img={energy_ammo_icon}
+        setSortByAmmo={setSortByAmmo}
+        sortByAmmo={sortByAmmo}
+        ammoType={"energy"}
+      ></AmmoButton>
 
-        <button
-          onClick={() =>
-            setSortByAmmo((currAmmo) => ({
-              ...currAmmo,
-              sniper: !currAmmo.sniper,
-            }))
-          }
-        >
-          Sniper{sortByAmmo.sniper && "*"}
-        </button>
-      </ButtonRowStyle>
+      <AmmoButton
+        img={shotgun_ammo_icon}
+        setSortByAmmo={setSortByAmmo}
+        sortByAmmo={sortByAmmo}
+        ammoType={"shotgun"}
+      ></AmmoButton>
+
+      <AmmoButton
+        img={sniper_ammo_icon}
+        setSortByAmmo={setSortByAmmo}
+        sortByAmmo={sortByAmmo}
+        ammoType={"sniper"}
+      ></AmmoButton>
+
+      <AmmoButton
+        img={mythic_arrow_ammo_icon}
+        setSortByAmmo={setSortByAmmo}
+        sortByAmmo={sortByAmmo}
+        ammoType={"mythic"}
+      ></AmmoButton>
     </NavBarStyle>
   );
 }

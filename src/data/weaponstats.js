@@ -3641,3 +3641,12 @@ export const weaponStats = [
     ],
   },
 ];
+
+export {
+  light_ammo_icon,
+  heavy_ammo_icon,
+  energy_ammo_icon,
+  sniper_ammo_icon,
+  shotgun_ammo_icon,
+  mythic_arrow_ammo_icon,
+};

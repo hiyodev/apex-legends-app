@@ -19,7 +19,7 @@ const RowHeaderStyle = styled.div`
   }};
   color: white;
   border-radius: 0.25rem;
-  padding: 0 0.25rem 0.25rem 0;
+  padding: 0 0.25em 0.25em 0;
 `;
 
 // Content Styles
@@ -46,12 +46,12 @@ const MultiRowContentStyle = styled.div`
 `;
 
 const RowIconStyle = styled.img`
-  padding: 0 0rem 0.25rem 0.25rem;
+  padding: 0 0rem 0.25em 0.25em;
   max-width: 1.75rem;
 `;
 
 const GunIconStyle = styled.img`
-  padding: 0 0rem 0 0.25rem;
+  padding: 0 0rem 0 0.25em;
   max-height: 1.75rem;
 `;
 
@@ -62,7 +62,7 @@ const AttachmentIconStyle = styled.img`
 `;
 
 const RowTextStyle = styled.div`
-  padding: 0 0.25rem 0.25rem 0.25rem;
+  padding: 0 0.25em 0.25em 0.25em;
 `;
 
 const ContentWrapper = styled.div`

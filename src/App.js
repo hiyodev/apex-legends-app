@@ -5,11 +5,11 @@ import CardList from "./components/CardList";
 import styled from "styled-components";
 
 const AppStyle = styled.div`
-  padding: 4rem 1rem 0 1rem;
   background-color: #282c34;
   display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 `;
 
