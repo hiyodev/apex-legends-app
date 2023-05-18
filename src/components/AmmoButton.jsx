@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 const ImageOpacityAnimation = keyframes`
  from {opacity: 0}
- to {opacity: 1}
+ to {opacity: 0.8}
 `;
 
 const AmmoImgStyle = styled.img`
