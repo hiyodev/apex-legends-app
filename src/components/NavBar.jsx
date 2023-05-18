@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ApexLogo from "../images/apex_logo.png";
 import AmmoButton from "./AmmoButton";
 
@@ -12,6 +12,11 @@ import {
   mythic_arrow_ammo_icon,
 } from "../data/weaponstats";
 
+const ImageOpacityAnimation = keyframes`
+ from {opacity: 0}
+ to {opacity: 1}
+`;
+
 const NavBarStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -22,12 +27,14 @@ const NavBarStyle = styled.div`
 `;
 
 const LogoStyle = styled.img`
+  animation: ${ImageOpacityAnimation} 0.7s ease-in-out;
   max-height: 4rem;
   padding-right: 1rem;
   object-fit: contain;
 `;
 
 const SearchBarStyle = styled.input`
+  animation: ${ImageOpacityAnimation} 0.7s ease-in-out;
   min-width: 15rem;
   max-width: 35rem;
   height: 1.5rem;

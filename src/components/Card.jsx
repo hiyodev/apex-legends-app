@@ -6,12 +6,13 @@ import { CategoryColorTheme } from "../utils/styleHelper.js";
 import CardRows from "./CardRows.jsx";
 import CardColumns from "./CardColumns.jsx";
 
-const cardFocusAnimation = keyframes`
-0% { transform:scale(1); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
-100% {transform:scale(1.1); box-shadow: 0px 20px 40px rgba(0, 0, 175, 0.4);}
+const ImageOpacityAnimation = keyframes`
+ from {opacity: 0}
+ to {opacity: 1}
 `;
 
 const CardStyle = styled.div`
+  animation: ${ImageOpacityAnimation} 0.7s ease-in;
   margin: 1rem;
   padding: 0.5em;
   border: 1px solid white;
@@ -22,16 +23,6 @@ const CardStyle = styled.div`
   }};
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 `;
-
-/*
-  // Expand card on hover
-  &:hover {
-    animation-name: ${cardFocusAnimation};
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-*/
 
 const TitleStyle = styled.div`
   font-size: 2rem;
