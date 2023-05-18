@@ -35,7 +35,7 @@ const LogoStyle = styled.img`
 
 const SearchBarStyle = styled.input`
   animation: ${ImageOpacityAnimation} 0.7s ease-in-out;
-  min-width: 15rem;
+  min-width: 17rem;
   max-width: 35rem;
   height: 1.5rem;
 `;

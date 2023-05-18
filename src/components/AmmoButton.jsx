@@ -14,6 +14,7 @@ const AmmoImgStyle = styled.img`
   object-fit: contain;
   max-height: 4rem;
   max-width: 4rem;
+  padding-right: 0.1rem;
   opacity: var(--opacityValue);
   --opacityValue: ${(props) => {
     return props.selected ? "0.8" : "0.15";
