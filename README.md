@@ -1,4 +1,6 @@
 # Apex Legends App ( 1 / 50 Apps )
+- Live at: https://hiyo-apexlegends.web.app/
+
 - Why did I make this?
 1. To learn and or practice the followings:
     1. Replicating components from websites
@@ -24,8 +26,3 @@
 3. Card: For the card title, image, description
 4. CardRows: For the content with solid fill titles to the left
 5. CardColumns: For the content with solid fills on top
-
-
-# Images
-- In Progress
-
