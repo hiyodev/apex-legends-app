@@ -1,5 +1,6 @@
 # Apex Legends App ( 1 / 50 Apps )
 - Live at: https://hiyo-apexlegends.web.app/
+![Screenshot](images/preview.png)
 
 - Why did I make this?
 1. To learn and or practice the followings:
