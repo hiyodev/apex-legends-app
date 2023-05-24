@@ -1,4 +1,4 @@
-# Apex Legends App ( 1 / 50 Apps )
+# Apex Legends App ( 1 / 25 Apps )
 - Live at: https://hiyo-apexlegends.web.app/
 ![Screenshot](images/preview.png)
 
@@ -10,7 +10,7 @@
     4. CSS styling and animation
     5. CSS Flexbox
 2. To become a better Frontend Developer.
-3. To work towards my 50 apps in 2023 goal, 1/50 apps done so far.
+3. To work towards my 25 apps in 2023 goal, 1/25 apps done so far.
 
 
 # App Summary
