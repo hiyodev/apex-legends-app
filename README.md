@@ -1,4 +1,4 @@
-# Apex Legends App ( 2 / 25 Apps )
+# Apex Legends App ( 1 / 25 Apps )
 ### Live Preview
 - https://hiyo-apexlegends.web.app/
 - Hosted using Firebase. 
