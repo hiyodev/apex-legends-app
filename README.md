@@ -1,29 +1,13 @@
-# Apex Legends App ( 1 / 25 Apps )
-- Live at: https://hiyo-apexlegends.web.app/
-![Screenshot](images/preview.png)
-
-- Why did I make this?
-1. To learn and or practice the followings:
-    1. Replicating components from websites
-    2. Creating reuseable components
-    3. Filtering Objects
-    4. CSS styling and animation
-    5. CSS Flexbox
-2. To become a better Frontend Developer.
-3. To work towards my 25 apps in 2023 goal, 1/25 apps done so far.
-
+# Apex Legends App ( 2 / 25 Apps )
+### Live Preview
+- https://hiyo-apexlegends.web.app/
+- Hosted using Firebase. 
 
 # App Summary
-## Weapon Card
-1. Simple app that shows all the weapons in Apex Legends
-2. This app references data and card style from https://apexlegends.fandom.com/
-3. The cards in my apps are the same as the cards in that website with some minor styling differences
-4. Cards can be searched, sorted according to criterias and has some user interactivity
+1. Search functionality is based on both title and description in the cards. 
+2. Each icon above represents the type of weapon, clicking any of them will filter them out. 
 
-
-## Code Info
-1. Weapon data and assets are stored locally.
-2. 4 main components, CardList -> Card -> CardRows & CardColumns
-3. Card: For the card title, image, description
-4. CardRows: For the content with solid fill titles to the left
-5. CardColumns: For the content with solid fills on top
+#### Why do this?
+1. I wanted a easier way to compare weapon stats for a game I played often with my friends.
+2. This website "https://apexlegends.fandom.com/wiki" provided stats but you had to individually open a tab for each weapon just to compare their stats. 
+3. To get better at FE development.
